@@ -35,7 +35,7 @@ export class AnimesListComponent implements OnInit {
     for (let i = 0; i < this.animes.length; i++) {
       promedio += this.animes[i].episode;
     }
-    this.promedioEP= promedio;
+    return promedio;
   }
 
   promedioRating() {
@@ -43,7 +43,7 @@ export class AnimesListComponent implements OnInit {
     for (let i = 0; i < this.animes.length; i++) {
       promedio += this.animes[i].Rating;
     }
-    this.promedioR= promedio / this.animes.length;
+    return promedio / this.animes.length;
   }
 
   ngOnInit() {
